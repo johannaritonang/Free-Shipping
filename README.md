@@ -1,4 +1,4 @@
-# Does Free Shipping Pay? · testing Peeba's growth hypotheses
+# Does Free Shipping Pay? · Testing Peeba's Growth Hypotheses
 
 Python companion to the Power BI report *Shipping Pays the Bills* (Peeba, a B2B wholesale marketplace connecting international brands with retailers in Taiwan: 400 orders, Jan – Jul 2023, TWD).
 The dashboard found that contribution margin is 19% of GMV but only 0.6% without shipping, and ended with five hypotheses. This notebook tests them with statistics,
@@ -13,13 +13,13 @@ works out whether free shipping could pay for itself, and checks whether each id
 | Is the take rate really falling? | Permutation test, overall vs within Marketplace, mix shift |
 | H2 / H3 / H5 | Fisher test on incentives; payment-fee simulation; bootstrap median, Spearman and Kruskal-Wallis on late payments |
 
-## Headline results
+## Headline Results
 * CM without shipping is 0.6% of GMV (95% CI −2.1% to +3.3%), with a 32% chance of being negative: shipping is the profit engine.
 * Free shipping would need about 30× today's GMV to pay back, and there is no sign that shipping charges stop new retailers from reordering.
 * A reorder-rate A/B test would need about 100 months at today's volume; an order-value test about 10 months.
 * H1, H2, H3 and H5 are supported. The fall in take rate is mostly mix: Direct orders went from 26% to 47% of GMV.
 
-## Run it
+## Run It
 ```bash
 pip install -r requirements.txt
 jupyter notebook "Free Shipping Deep Dive.ipynb"
